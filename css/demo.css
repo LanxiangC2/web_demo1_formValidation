@@ -1,0 +1,309 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: rgb(251, 116, 3);
+}
+
+body{
+	width: 100%;
+}
+/*页头部分*/
+.header{
+	background: #efefef;
+	height: 110px;
+	min-width: 1200px;
+	/* overflow-x: auto;	 */
+	/* overflow-y: hidden; */
+}
+.header .container{
+	width: 60%;
+	min-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	/*border: 1px solid #e0e0e0;*/
+}
+.header .container div{
+	float: left;
+	height: 110px;
+	line-height: 110px;
+	color: grey;
+}
+.header .container > div:first-child{
+	padding: 1rem;
+	/* height: 100%; */
+}
+.header .container div:first-child img{
+	height: 80%;
+}
+.header .container > div:hover{
+	cursor: pointer;
+}
+.header .container div:nth-child(2) span{
+	font-size: 24px;
+	padding: 4px 8px 4px 4px;
+	margin-right: 8px ;
+	border-right: 2px solid black;
+	color: black;
+}
+.header .container ul{
+	float: right
+}
+.header .container ul li{
+	list-style-type: none;
+	/*display: inline-block;*/
+	float: left;
+	height: 110px;
+	line-height: 110px;
+	/*width: 120px*/
+	padding-right: 1rem;
+}
+.header .container ul li:hover{
+	cursor: pointer;
+}
+.header .container > ul > li:nth-child(5){
+	position: relative;
+	width: 17px;
+	padding-left: 30px;
+	padding-right: 0px;
+}
+.header .container ul li .login,.menu-title{
+	color: rgb(251, 116, 3);
+	margin: 0px 5px 0px 5px;
+	padding: 10px 0px;
+}
+
+/*二级菜单*/
+.header .container > ul > li:nth-child(4){
+	position: relative;
+	width: 90px;
+	cursor: pointer;
+	z-index: 999;
+}
+.header .container ul li:nth-child(4) .menu-title .menu-title-icon{
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -4px;
+	content:  '';
+	width: 0px;
+	height: 0px;
+	border-top: 8px solid black;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+
+}
+.header .container ul li:nth-child(4) .menu-item{
+	position: absolute;
+	width: 130px;
+	top: 65px;
+	z-index: 999;
+}
+.header .container ul li:nth-child(4) .menu-item ul{
+	/*display: none;*/
+	float: none;
+	border: 1px solid rgb(251, 116, 3);
+	background: #fcfcfc
+}
+.header .container ul li:nth-child(4) .menu-item ul li{
+	position: static;
+	float: none;
+	height: 30px;
+	font-size: 10px;
+	line-height: 30px;
+	/*padding-left: 16px;*/
+	padding: 0px;
+	margin: 0px 16px 0px 16px;
+}
+div.menu-item{
+	display: none;
+}
+div.menu-item > ul.menu-item-des > li:hover{
+	color: rgb(251, 116, 3);
+}
+div.menu-item > ul.menu-item-des > li:nth-child(2){
+	border-bottom: 1px dashed grey;
+}
+div.menu-item > ul.menu-item-des > li:nth-child(3){
+	border-bottom: 1px dashed grey;
+}
+div.menu-item > ul.menu-item-des > li:nth-child(5){
+	border-bottom: 1px dashed grey;
+}
+div.menu-item > ul.menu-item-des > li:nth-child(6){
+	border-bottom: 1px dashed grey;
+}
+div.menu-item > ul.menu-item-des > li:nth-child(8){
+	border-bottom: 1px dashed grey;
+}
+div.menu-item > ul.menu-item-des > li:nth-child(9){
+	border-bottom: 1px dashed grey;
+}
+
+
+
+.header .container ul li:nth-child(5) img{
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	height: 24px
+}
+
+/*主题部分*/
+.content{
+	width: 100%;
+	min-width: 1200px;
+	/*height: 800px;*/
+	/* overflow-y: auto ; */
+	border-top: 2px solid #1E90FF;
+}
+.content .container{
+	width: 60%;
+	min-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	/*border: 1px solid #e0e0e0;*/
+}
+.content .container .title{
+	text-align: left;
+	margin: 10px 0;
+	color: #696969;
+}
+.content .container .title span{
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+}
+/*终于写到表单验证的部分了|||*/
+.form{
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgb(251, 116, 3);
+	border-radius: 5px;
+}
+.form .form-title{
+	font-size: 20px;
+	padding: 10px;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	background: rgb(251, 116, 3);
+	border-radius: 	5px
+}
+.form .form-content{
+	text-align: center;
+}
+.form .form-content .star{
+	color: red;
+}
+table{
+	width: 	60%;
+	margin: 40px auto 20px;
+}
+table tr td:nth-child(1) {
+	width: 	30%;
+	text-align: right;	
+}
+table tr td:nth-child(2) {
+	width: 	30%;
+}
+table tr td:nth-child(2) input {
+	width: 	90%;
+	margin-left: 5px;
+}
+table tr td:nth-child(3) {
+	width: 	40%;
+	text-align: left;	
+}
+table td{
+	height: 30px;
+	line-height: 30px;
+	/*border: 1px solid #e0e0e0;*/
+}
+table tr td.custom{
+	text-align: left
+}
+table td select{
+	width: 	90%;
+}
+
+.form .form-content .protocol{
+		margin-bottom: 	40px
+}
+
+.protocol span{
+	color: blue;
+}
+.form .form-content .btn input{
+	color: white;
+	width: 	220px;
+	height: 	40px;
+	background: rgb(251, 116, 3);
+	border-radius: 	5px;
+	border: 1px solid transparent;
+	margin: 20px auto;
+}
+
+
+
+/*安全等级的方框*/
+#div_safety{
+}
+#div_safety li{
+	list-style-type: none;
+	float: left;
+	/*border: 1px solid grey;*/
+	display: line-block;
+	width: 30px;
+	height: 5px;
+	margin-right: 5px;
+	background: #e0e0e0
+}
+#custom{
+	display: none;
+}
+/*姓名填写规则*/
+td.nameRule{
+	position: relative;
+}
+.dialog{
+	display: none;
+	position: absolute;
+	width: 400px;
+	/*height: 500px;*/
+	top: 30px;
+	font-size: 14px;
+	line-height: 28px;
+	background: #ffffff;
+	border: 1px solid #76b5e0;
+	padding: 0px 10px;
+}
+
+/*姓名填写规则*/
+a.nameRule{
+	/*cursor: pointer;*/
+}
+
+
+/*按钮的设置*/
+input.button:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 10px #888888;
+}
+
+
+/*页脚部分*/
+.footer{
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	height: 110px;
+	line-height: 55px;
+	width: 100%;
+	min-width: 1200px;
+	background: #e0e0e0;
+	color: #696969;
+	border-top: 2px solid #1E90FF;
+}

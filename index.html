@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>demo2</title>
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<!-- 页头部分 -->
+	<div class="header">
+		<div class="container">
+			<div><img src="素材/logo2.png" alt=""></div>
+			<div><span>重庆大学高铁客服服务中心</span></div>
+			<div>客户服务</div>
+			<ul class="nav">
+				<li>意见反馈</li>
+				<li><a href="https://www.imooc.com/">mooc@com</a></li>
+				<li>您好，请<span class="login">登录</span>|<span class="register">注册</span></li>
+				<li>
+					<span class="menu-title">我的IMOOC<div class="menu-title-icon"></div></span>
+					<div class="menu-item">
+						<ul class="menu-item-des">
+							<li>未完成订单</li>
+							<li>已完成订单（改/退）</li>
+							<li>我的保险</li>
+							<li>查看个人信息</li>
+							<li>账户安全</li>
+							<li>常用联系人</li>
+							<li>重点旅客预约</li>
+							<li>遗失物品查找</li>
+							<li>服务查询</li>
+							<li>投诉</li>
+							<li>建议</li>
+						</ul>
+					</div>
+				</li>	
+				<li><img src="素材/未标题-1.png" alt=""></li>
+				<li>手机版</li>					
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="title"><span>您现在的位置：</span>客运中心 > 首页</div>
+			<div class="form">
+				<div class="form-title">账户信息</div>
+				<div class="form-content">
+					<table>
+								<tr>	
+									<td><span class="star">*</span> 用户名：</td>
+									<td><input type="text" name="userName"></td>
+									<td><span class="alertMessage"></span></td>
+								</tr>
+								<tr>	
+									<td><span class="star">*</span> 登录密码：</td>
+									<td><input type="text" name="password"></td>
+									<!-- 显示三个方框 -->		
+									<td> 
+										<ul id="div_safety">
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</td>
+								</tr>
+
+								<tr id="custom">
+									<td></td>
+									<td></td>
+									<td class="custom">
+										<span class="alertMessage"></span>
+									</td>
+								</tr>
+
+								<tr>	
+									<td><span class="star">*</span> 确认密码：</td>
+									<td><input type="text" name="confirm"></td>
+									<td><span class="alertMessage"></span></td>
+								</tr>	
+								
+								<tr>	
+									<td><span class="star">*</span> 姓名：</td>
+									<td><input type="text" name="name"></td>
+									<td class="nameRule">
+										<span class="alertMessage"><a href="" class="nameRule" id="nameRule">姓名填写规则</a></span>
+										<div class="dialog">
+											1.确认姓名中生僻字无法输入时，可用生僻字拼音或者同音字替代。<br>
+											2.输入姓名保存后，遇有系统无法正确显示的汉字，可用该汉字的拼音或者同音字重新修改后保存。<br>
+											3.姓名中有繁体字无法输入时，可用简体代替。<br>
+											4.姓名较长时，汉字和英文字符合计超过30字符（1个汉字算两个字符）的，需要按姓名中的第一个汉字或者英文字符开始按顺序连续输入30个字符（空格字符不输入），其中英文字符输入时不区分大小写。
+										</div>
+									</td>
+								</tr>
+
+								<tr>	
+									<td><span class="star">*</span> 证件类型：</td>
+									<td>
+										<select name="idType" id="idType">
+											<option value="1" selected="selected">二代身份证</option>
+											<option value="2">港澳通行证</option>
+											<option value="3">护照</option>
+										</select>
+									</td>
+									<td><!-- <span class="alertMessage"></span> --></td>
+								</tr>
+
+								<tr>	
+									<td><span class="star">*</span> 证件号码：</td>
+									<td><input type="text" name="idNumber"></td>
+									<td><span class="alertMessage"></span></td>
+								</tr>
+
+								<tr>	
+									<td>邮箱：</td>
+									<td><input type="text" name="email"></td>
+									<td><span class="alertMessage"></span></td>
+								</tr>
+
+								<tr>	
+									<td><span class="star">*</span> 手机号码：</td>
+									<td><input type="text" name="phoneNumber"></td>
+									<td><span class="alertMessage"></span></td>
+								</tr>
+
+								<tr>	
+									<td><span class="star">*</span> 旅客类型：</td>
+									<td>
+										<select name="personType" id="personType">
+											<option value="adult" selected="selected">成人</option>
+											<option value="	children">儿童</option>
+										</select>
+									</td>
+									<td><!-- <span class="alertMessage"></span> --></td>
+								</tr>
+								
+					</table>
+					<div class="protocol">
+						<input type="checkbox">我已阅读并同意<span>	《中国铁路客户服务中心网站服务条款》</span>
+					</div>
+					<div class="btn"><input type="button" value="下一步" class="button"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		关于我们|网站说明<br>Copyright&#169;2017 imooc.com All Rights Reserved | 京ICP备13046642号-2
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/demo.js"></script>
